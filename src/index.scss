@@ -1,40 +1,20 @@
-$primary_1: #842c51;
-$primary_2: #a12121;
-$primary_3: #196782;
-$primary_4: #f7fbff;
-@media screen and (min-width: 768px) {
-body {
-	background-color:$primary_1;
-	padding: 20px;
-	margin: 0;
+$primary_1: #f7fbff;
+$primary_2: #842c51;
+$primary_3:#196782;
+$primary_4: #a12121;
+@media screen and (min-width: 0px) and (max-width: 360px) {
+    body { background-color:$primary_1; }
 }
+@media screen and (min-width: 360px) and (max-width: 768px) {
+    body { background-color:$primary_2; }
 }
-@media screen and (max-width: 360px) {
-	body {
-		background-color:$primary_4;
-		padding: 20px;
-		margin: 0;
-	}
-	}
+@media screen and (min-width: 768px) and (max-width: 1366px){
+    body { background-color: $primary_3; }
+}
+@media screen and (min-width: 1920px) {
+    body { background-color:$primary_4; }
+}
 
-/* On screens that are 1920px wide or less, the background color*/
-@media screen and (max-width: 1920px) {
-	body {
-	  background-color:$primary_2;
-	  padding: 20px;
-	margin: 0;
-	}
-  }
-  
-  /* On screens that are 1366px wide or less, the background color */
-  @media screen and (max-width: 1366px) {
-	body {
-	  background-color:$primary_3;
-	  padding: 20px;
-	margin: 0;
-	}
-  }
-  
 h1 {
 	font-family: sans-serif;
 }
